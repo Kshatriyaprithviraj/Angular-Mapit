@@ -1,0 +1,55 @@
+<!--
+  <h1>{{ title }}</h1>
+-->
+
+<!--<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map> -->
+
+<!--Angular Google Maps with places search -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1 class="navbar"><span id="title-header">🗺️MapIt!</span> <br /></h1>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="row">
+      <div class="col-12">
+        <label class="label-for-addr">Enter address/name of an area</label>
+      </div>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      (keydown.enter)="$event.preventDefault()"
+      placeholder="Search Nearest Location"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="off"
+      type="text"
+      #search
+    />
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+        <agm-marker
+          [latitude]="latitude"
+          [longitude]="longitude"
+          [markerDraggable]="true"
+          (dragEnd)="markerDragEnd($event)"
+        ></agm-marker>
+      </agm-map>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h5>Address: {{ address }}</h5>
+    <div>Latitude: {{ latitude }}</div>
+    <div>Longitude: {{ longitude }}</div>
+  </div>
+</div>

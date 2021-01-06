@@ -2,20 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AgmCoreModule } from '@agm/core';
+import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
+import { MapComponent } from './Map/Map.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, MapComponent],
   imports: [
     BrowserModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDN1pBcdk8v7JFV0IHEAVjMqEwcA1mLPTE'
+      apiKey: 'AIzaSyDN1pBcdk8v7JFV0IHEAVjMqEwcA1mLPTE',
+      libraries: ['places'],
     }),
-    AgmCoreModule
+    AgmCoreModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [GoogleMapsAPIWrapper],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
