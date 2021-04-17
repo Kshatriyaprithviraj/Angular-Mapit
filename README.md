@@ -19,7 +19,7 @@ Make sure to enable the <code>Maps Javascript API</code> (Show Map), <code>Place
 
 # To run 🏃
 1. <code>git clone https://github.com/Kshatriyaprithviraj/Angular-Mapit.git</code>
-2. navigate to folder after <code>git clone</code> and run <code>npm install</code>
+2. navigate to folder and run <code>npm install</code>
 3. open http://localhost:4200
 
 # Disclaimer ⚡
