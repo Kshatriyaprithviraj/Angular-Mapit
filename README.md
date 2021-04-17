@@ -12,10 +12,10 @@ Make sure to enable the <code>Maps Javascript API</code> (Show Map), <code>Place
 
 # Tools used 🧰
 
-* [Angular framework, CLI ver 11.0.4] (https://angular.io/)
-* [Bootstrap cdn] (https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css)
-* [Angular Google Maps (AGM)] (https://angular-maps.com/)
-* [@types/googlemaps] (https://www.npmjs.com/package/@types/googlemaps)
+* [Angular framework, CLI ver 11.0.4](https://angular.io/)
+* [Bootstrap cdn](https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css)
+* [Angular Google Maps (AGM)](https://angular-maps.com/)
+* [@types/googlemaps](https://www.npmjs.com/package/@types/googlemaps)
 
 # To run 🏃
 1. <code>git clone</code> using https://github.com/Kshatriyaprithviraj/Angular-Mapit.git
